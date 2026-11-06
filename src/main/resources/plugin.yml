@@ -1,0 +1,17 @@
+name: Silhouette
+version: 1.0.0
+main: com.example.silhouette.SilhouettePlugin
+api-version: '1.21'
+description: A chainmail chestplate that grants true invisibility.
+depend: [ProtocolLib]
+
+commands:
+  silhouette:
+    description: Give yourself (or someone else) the Silhouette chestplate.
+    usage: /silhouette [player]
+    permission: silhouette.give
+
+permissions:
+  silhouette.give:
+    description: Allows giving the Silhouette chestplate.
+    default: op
